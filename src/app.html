@@ -1,0 +1,67 @@
+<template>
+    <require from="./app.scss"></require>
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <h1 class="navbar-item">
+                <img src="/icons/aurss.96x96.png" alt="Aurss logo" />
+                &nbsp;
+                aurss
+            </h1>
+
+            <a
+                role="button"
+                class="navbar-burger burger ${burgerMenuExpanded ? 'is-active' : ''}"
+                aria-label="menu"
+                aria-expanded="${burgerMenuExpanded}"
+                click.delegate="toggleBurgerMenu()"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu ${burgerMenuExpanded ? 'is-active' : ''}">
+            <div class="navbar-start is-hidden-desktop is-hidden-tablet">
+                <aurss-category-links
+                    categories.bind="state.rss.categories"
+                    current-category-id.bind="state.rss.currentCategoryId"
+                    on-active-clicked.bind="fetchArticlesForCategory"
+                ></aurss-category-links>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-light" click.delegate="logout()" t="logout">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="columns columns-border-top-0">
+            <div class="column is-fullheight-with-navbar is-one-fifths is-hidden-mobile">
+                <aside class="menu position-fixed">
+                    <aurss-category-links
+                        categories.bind="state.rss.categories"
+                        current-category-id.bind="state.rss.currentCategoryId"
+                        on-active-clicked.bind="fetchArticlesForCategory"
+                    ></aurss-category-links>
+                </aside>
+            </div>
+
+            <div class="column is-four-fifths">
+                <div class="notification is-danger" if.bind="!state.isOnline">
+                    <p class="has-text-centered" t="notification-offline">You are now offline.</p>
+                </div>
+
+                <router-view></router-view>
+            </div>
+        </div>
+    </main>
+</template>

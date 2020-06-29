@@ -1,0 +1,132 @@
+{
+    "name": "aurss",
+    "description": "An Aurelia client application.",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/Jenselme/aurss.git"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.10.1",
+        "aurelia-animator-css": "^1.0.4",
+        "aurelia-bootstrapper": "^2.3.0",
+        "aurelia-framework": "^1.3.0",
+        "aurelia-i18n": "^3.0.0-beta.7",
+        "aurelia-polyfills": "^1.3.0",
+        "aurelia-router": "^1.6.3",
+        "aurelia-store": "^1.4.0",
+        "bluebird": "^3.5.2",
+        "bulma": "^0.7.4",
+        "i18next-xhr-backend": "^2.0.1",
+        "idb": "^4.0.3",
+        "intl": "^1.2.5",
+        "rxjs": "^6.5.1"
+    },
+    "peerDependencies": {},
+    "devDependencies": {
+        "@types/bluebird": "^3.5.24",
+        "@types/i18next": "^12.1.0",
+        "@types/jest": "^23.3.5",
+        "@types/lodash": "^4.14.117",
+        "@types/node": "^10.11.6",
+        "@types/webpack": "^4.4.15",
+        "@typescript-eslint/eslint-plugin": "^1.13.0",
+        "@typescript-eslint/parser": "^1.13.0",
+        "aurelia-cli": "^1.0.0-beta.9",
+        "aurelia-loader-nodejs": "^1.0.1",
+        "aurelia-pal-nodejs": "^1.1.1",
+        "aurelia-testing": "^1.0.0",
+        "aurelia-tools": "^2.0.0",
+        "aurelia-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^4.5.2",
+        "css-loader": "^1.0.0",
+        "del": "^3.0.0",
+        "duplicate-package-checker-webpack-plugin": "^3.0.0",
+        "eslint": "^6.1.0",
+        "expose-loader": "^0.7.5",
+        "file-loader": "^2.0.0",
+        "gulp": "^4.0.0",
+        "gulp-rename": "^1.4.0",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "http-server": "^0.11.1",
+        "i18next-scanner": "^2.10.2",
+        "istanbul-instrumenter-loader": "^3.0.1",
+        "jest": "^23.6.0",
+        "jest-cli": "^23.6.0",
+        "jest-fetch-mock": "^2.1.2",
+        "jest-localstorage-mock": "^2.4.0",
+        "json-loader": "^0.5.7",
+        "mini-css-extract-plugin": "^0.4.3",
+        "minimatch": "^3.0.4",
+        "node-sass": "^4.9.3",
+        "nps": "^5.9.3",
+        "nps-utils": "^1.7.0",
+        "opn": "^5.4.0",
+        "plugin-error": "^1.0.1",
+        "sass-loader": "^7.1.0",
+        "serviceworker-webpack-plugin": "^1.0.1",
+        "style-loader": "^0.23.1",
+        "through2": "^2.0.3",
+        "ts-jest": "^23.10.4",
+        "ts-loader": "^5.2.1",
+        "ts-node": "^7.0.1",
+        "typescript": "^3.1.2",
+        "url-loader": "^1.1.1",
+        "vinyl-fs": "^3.0.3",
+        "webpack": "^4.27.0",
+        "webpack-bundle-analyzer": "latest",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.9"
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/fileMock.js",
+            "\\.(css|less|scss)$": "<rootDir>/test/__mocks__/styleMock.js"
+        },
+        "modulePaths": [
+            "<rootDir>/src",
+            "<rootDir>/node_modules"
+        ],
+        "moduleFileExtensions": [
+            "js",
+            "json",
+            "ts"
+        ],
+        "transform": {
+            "^.+\\.ts$": "ts-jest"
+        },
+        "testRegex": "\\.spec\\.(ts|js)$",
+        "setupFiles": [
+            "<rootDir>/test/jest-pretest.ts",
+            "jest-localstorage-mock"
+        ],
+        "testEnvironment": "node",
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "src/**/*.{js,ts}",
+            "!**/*.spec.{js,ts}",
+            "!**/node_modules/**",
+            "!**/test/**"
+        ],
+        "coverageDirectory": "<rootDir>/test/coverage-jest",
+        "coverageReporters": [
+            "json",
+            "lcov",
+            "text",
+            "html"
+        ]
+    },
+    "engines": {
+        "node": "10.x"
+    },
+    "scripts": {
+        "build": "nps build",
+        "dev": "au run --watch",
+        "lint": "nps test.lint",
+        "start": "nps",
+        "test": "nps test"
+    },
+    "main": "dist/app.bundle.js"
+}

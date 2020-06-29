@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rss-backend-actions Actions that mutate the state but do not rely on the backend authenticateSucceeded should store authentication infos in the state and to navigate to the home 1`] = `
+Object {
+  "host": "",
+  "isLoggedIn": false,
+  "password": "",
+  "token": "",
+  "username": "",
+}
+`;
+
+exports[`rss-backend-actions Actions that mutate the state but do not rely on the backend authenticateSucceeded should store authentication infos in the state and to navigate to the home 2`] = `
+Object {
+  "authentication": Object {
+    "host": "https://rss.example.com",
+    "isLoggedIn": true,
+    "password": "fake-password",
+    "token": "fake-token",
+    "username": "my-username",
+  },
+  "isOnline": true,
+  "router": Object {
+    "currentRoute": Object {
+      "name": "",
+      "params": Object {},
+    },
+    "newRoute": Object {
+      "name": "display-articles-from-category",
+      "params": Object {
+        "categoryId": "unread",
+      },
+    },
+  },
+  "rss": Object {
+    "articlesToDiscards": Array [],
+    "categories": Array [],
+    "currentCategoryId": "",
+    "displayedArticles": Array [],
+    "isFetching": false,
+  },
+  "selectableBackends": Array [
+    "TTRSS",
+    "test",
+  ],
+  "selectedBackend": "test",
+}
+`;

@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions doRouterNavigation should set the new route 1`] = `
+Object {
+  "authentication": Object {
+    "host": "",
+    "isLoggedIn": false,
+    "password": "",
+    "token": "",
+    "username": "",
+  },
+  "isOnline": true,
+  "router": Object {
+    "currentRoute": Object {
+      "name": "",
+      "params": Object {},
+    },
+    "newRoute": Object {
+      "name": "/new-route",
+      "params": Object {},
+    },
+  },
+  "rss": Object {
+    "articlesToDiscards": Array [],
+    "categories": Array [],
+    "currentCategoryId": "",
+    "displayedArticles": Array [],
+    "isFetching": false,
+  },
+  "selectableBackends": Array [
+    "TTRSS",
+    "test",
+  ],
+  "selectedBackend": "test",
+}
+`;
+
+exports[`actions lougout should remove authentication infos and redirect to login page 1`] = `
+Object {
+  "host": "",
+  "isLoggedIn": false,
+  "password": "",
+  "token": "",
+  "username": "",
+}
+`;
+
+exports[`actions routerPerformedNavigation should update the currentRoute and reset the new route 1`] = `
+Object {
+  "authentication": Object {
+    "host": "",
+    "isLoggedIn": false,
+    "password": "",
+    "token": "",
+    "username": "",
+  },
+  "isOnline": true,
+  "router": Object {
+    "currentRoute": Object {
+      "name": "/current-route",
+      "params": Object {},
+    },
+    "newRoute": null,
+  },
+  "rss": Object {
+    "articlesToDiscards": Array [],
+    "categories": Array [],
+    "currentCategoryId": "",
+    "displayedArticles": Array [],
+    "isFetching": false,
+  },
+  "selectableBackends": Array [
+    "TTRSS",
+    "test",
+  ],
+  "selectedBackend": "test",
+}
+`;
+
+exports[`actions routerPerformedNavigation should update the currentRoute and reset the new route with route params 1`] = `
+Object {
+  "authentication": Object {
+    "host": "",
+    "isLoggedIn": false,
+    "password": "",
+    "token": "",
+    "username": "",
+  },
+  "isOnline": true,
+  "router": Object {
+    "currentRoute": Object {
+      "name": "/current-route",
+      "params": Object {
+        "categoryId": 7,
+      },
+    },
+    "newRoute": null,
+  },
+  "rss": Object {
+    "articlesToDiscards": Array [],
+    "categories": Array [],
+    "currentCategoryId": "7",
+    "displayedArticles": Array [],
+    "isFetching": false,
+  },
+  "selectableBackends": Array [
+    "TTRSS",
+    "test",
+  ],
+  "selectedBackend": "test",
+}
+`;

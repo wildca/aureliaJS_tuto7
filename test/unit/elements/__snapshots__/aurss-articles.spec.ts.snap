@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`aurss-article should render and match snapshot 1`] = `
+"<body><div>
+            <aurss-article value.bind=\\"article\\" mark-article-as-read.bind=\\"markArticleAsRead\\" mark-article-as-unread.bind=\\"markArticleAsUnread\\" open-article.bind=\\"openArticle\\" class=\\"au-target\\" au-target-id=\\"18\\">
+    <div class=\\"au-target tile is-parent unread\\" au-target-id=\\"1\\">
+        <div class=\\"tile is-child\\">
+            <div class=\\"card\\">
+                <header class=\\"card-content\\">
+                    <div class=\\"is-pulled-right\\">
+                        <!--anchor-->
+                        <a click.delegate=\\"markAsFavorite()\\" class=\\"au-target\\" au-target-id=\\"4\\">
+                            <i class=\\"far fa-star is-size-5\\"></i>
+                        </a><!--anchor-->
+                    </div>
+                    <p class=\\"title\\">
+                        <!-- We use mouseup instead of click to correctly detect wheel clicks. -->
+                        <a href.bind=\\"value.link\\" target=\\"_blank\\" mouseup.delegate=\\"markAsRead()\\" class=\\"au-target\\" au-target-id=\\"6\\" href=\\"https://example.com/article/0\\">Test article</a>
+                    </p>
+                    <p class=\\"subtitle is-4\\">Me 6/10/2019, 13:00 – Test feed</p>
+                </header>
+                <footer class=\\"card-footer\\">
+                    <div class=\\"card-footer-item is-hidden-mobile\\">
+                        <!--anchor-->
+                        <button class=\\"button is-light is-fullwidth au-target\\" type=\\"button\\" click.delegate=\\"markAsFavorite()\\" t=\\"article-mark-as-favorite-btn\\" au-target-id=\\"11\\"></button><!--anchor-->
+                    </div>
+                    <div class=\\"card-footer-item is-hidden-mobile\\">
+                        <!--anchor-->
+                            <button class=\\"button is-light is-fullwidth au-target\\" type=\\"button\\" click.delegate=\\"markAsRead()\\" t=\\"article-mark-as-read-btn\\" au-target-id=\\"15\\">
+                            Mark as read
+                        </button><!--anchor-->
+                    </div>
+                    <div class=\\"card-footer-item\\">
+                        <button class=\\"button is-primary is-fullwidth au-target\\" type=\\"button\\" click.delegate=\\"open()\\" t=\\"article-open-btn\\" au-target-id=\\"17\\">
+                            Open
+                        </button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</aurss-article>
+            </div></body>"
+`;

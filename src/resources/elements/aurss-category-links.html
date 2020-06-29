@@ -1,0 +1,17 @@
+<template>
+    <ul class="menu-list">
+        <li repeat.for="category of categories">
+            <a
+                class="${category.id === currentCategoryId ? 'is-active' : ''}"
+                click.delegate="dispatchOnActiveClicked($event, category.id)"
+                route-href="route: display-articles-from-category; params.bind: {categoryId: category.id}"
+            >
+                ${category.title}
+                <span
+                    if.bind="category.unreadCount > 0"
+                    class="tag has-background-info has-text-white"
+                >${category.unreadCount}</span>
+            </a>
+        </li>
+    </ul>
+</template>

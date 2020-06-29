@@ -1,0 +1,23 @@
+{
+    "logout": "Logout",
+    "notification-offline": "You are now offline",
+    "router-title-login": "Login",
+    "login-page-authentication-failed-error-message": "Authentication failed. Please check your username and password.",
+    "article-mark-as-unread-btn": "Mark as unread",
+    "article-mark-as-read-btn": "Mark as read",
+    "article-open-btn": "Open",
+    "login-page-main-title": "Login",
+    "login-form-host-label": "Host",
+    "login-form-username-label": "Username",
+    "login-form-password-label": "Password",
+    "login-form-login-btn": "Login",
+    "article-unmark-as-favorite-btn": "Remove from favorite",
+    "article-mark-as-favorite-btn": "Add to favorite",
+    "login-form-backend-label": "Server type",
+    "router-title-display-articles-from-category": "Actiles by category",
+    "display-articles-from-category-no-article": "No article.",
+    "display-articles-from-category-title-all": "All articles",
+    "display-articles-from-category-title-unread": "Unread articles",
+    "display-articles-from-category-title-favorites": "Favorite articles",
+    "display-articles-from-category-unknown-category": ""
+}

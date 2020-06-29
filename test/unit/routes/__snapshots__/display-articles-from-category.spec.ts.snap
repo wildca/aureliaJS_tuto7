@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Route: DisplayArticlesFromCategory Render tests should render and match snapshot after fetching and no result 1`] = `
+"<body><div><display-articles-from-category class=\\"au-target\\" au-target-id=\\"8\\">
+    <h2 class=\\"subtitle is-2\\"></h2>
+
+    <!--anchor-->
+    <div class=\\"articles-container\\">
+        <p t=\\"display-articles-from-category-no-article\\">No article.</p><!--anchor-->
+
+        <div class=\\"tile is-ancestor is-vertical\\">
+            <!--anchor-->
+        </div>
+    </div><!--anchor-->
+</display-articles-from-category></div></body>"
+`;
+
+exports[`Route: DisplayArticlesFromCategory Render tests should render and match snapshot after fetching and results 1`] = `
+"<body><div><display-articles-from-category class=\\"au-target\\" au-target-id=\\"9\\">
+    <h2 class=\\"subtitle is-2\\"></h2>
+
+    <!--anchor-->
+    <div class=\\"articles-container\\">
+        <!--anchor-->
+
+        <div class=\\"tile is-ancestor is-vertical\\">
+            <aurss-article aurss-swipable=\\"on-swipe-success.bind: markArticleAsReadAndDiscard; on-swipe-success-arg.bind: article\\" aurss-mark-as-read-on-scroll=\\"mark-as-read.bind: markArticleAsRead; article.bind: article\\" value.one-time=\\"article\\" mark-article-as-read.one-time=\\"markArticleAsRead\\" mark-article-as-unread.one-time=\\"markArticleAsUnread\\" mark-article-as-favorite.one-time=\\"markArticleAsFavorite\\" unmark-article-as-favorite.one-time=\\"unmarkArticleAsFavorite\\" open-article.one-time=\\"openArticle\\" class=\\"au-target\\" au-target-id=\\"4\\"></aurss-article><!--anchor-->
+        </div>
+    </div><!--anchor-->
+</display-articles-from-category></div></body>"
+`;
+
+exports[`Route: DisplayArticlesFromCategory Render tests should render and match snapshot while fetching 1`] = `
+"<body><div><display-articles-from-category class=\\"au-target\\" au-target-id=\\"7\\">
+    <h2 class=\\"subtitle is-2\\"></h2>
+
+    <div class=\\"has-text-centered\\">
+        <i class=\\"fas fa-spinner fa-spin is-size-1\\"></i>
+    </div><!--anchor-->
+    <!--anchor-->
+</display-articles-from-category></div></body>"
+`;

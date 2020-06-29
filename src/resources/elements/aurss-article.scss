@@ -1,0 +1,11 @@
+@import "../../../node_modules/bulma/bulma.sass";
+
+aurss-article {
+    .read {
+        opacity: .5;
+    }
+
+    .title a {
+        color: $text;
+    }
+}

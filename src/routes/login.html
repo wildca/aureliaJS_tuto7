@@ -1,0 +1,43 @@
+<template>
+    <h2 class="subtitle is-2" t="login-page-main-title">Connection form</h2>
+
+    <div class="columns is-mobile">
+        <form class="column is-half-desktop is-offset-one-quarter-desktop" method="POST" submit.delegate="login($event)">
+            <div class="field">
+                <label for="host" class="label" t="login-form-host-label">Host</label>
+                <div class="control">
+                    <input id="host" class="input" value.bind="host" required />
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="username" class="label" t="login-form-username-label">Username</label>
+                <div class="control">
+                    <input id="username" class="input" value.bind="username" required />
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="password" class="label" t="login-form-password-label">Password</label>
+                <div class="control">
+                    <input id="password" class="input" type="password" value.bind="password" required />
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="backend" class="label" t="login-form-backend-label">Backend</label>
+                <div class="control">
+                    <select id="backend" class="select" value.bind="selectedBackend">
+                        <option repeat.for="backend of selectableBackends" model.bind="backend">${backend}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-link" type="submit" t="login-form-login-btn">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</template>

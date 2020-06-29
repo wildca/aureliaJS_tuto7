@@ -1,0 +1,23 @@
+{
+    "logout": "Se déconnecter",
+    "notification-offline": "Vous êtes désormais hors ligne.",
+    "router-title-login": "Connexion",
+    "login-page-authentication-failed-error-message": "La connexion n'a réussie. Vérifiez votre nom d'utilisateur et votre mot de passe.",
+    "article-mark-as-unread-btn": "Marquer comme non lu",
+    "article-mark-as-read-btn": "Marquer comme lu",
+    "article-open-btn": "Ouvrir",
+    "login-page-main-title": "Connexion",
+    "login-form-host-label": "Hôte",
+    "login-form-username-label": "Nom d'utilisateur",
+    "login-form-password-label": "Mot de passe",
+    "login-form-login-btn": "Se connecter",
+    "article-unmark-as-favorite-btn": "Retirer des favoris",
+    "article-mark-as-favorite-btn": "Ajouter aux favoris",
+    "login-form-backend-label": "Type de server",
+    "router-title-display-articles-from-category": "Articles par catégorie",
+    "display-articles-from-category-no-article": "Aucun article",
+    "display-articles-from-category-title-all": "Tous les articles",
+    "display-articles-from-category-title-unread": "Articles non lus",
+    "display-articles-from-category-title-favorites": "Articles favoris",
+    "display-articles-from-category-unknown-category": ""
+}

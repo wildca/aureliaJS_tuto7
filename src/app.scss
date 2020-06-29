@@ -1,0 +1,13 @@
+@import "../node_modules/bulma/bulma.sass";
+
+.columns-border-top-0 {
+    margin-top: 0;
+}
+
+.navbar-item.is-link-active {
+    background-color: $light;
+}
+
+.position-fixed {
+    position: fixed;
+}
