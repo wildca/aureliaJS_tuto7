@@ -14,3 +14,4 @@ RSS reader application.
 1. Implement the backend. It must implement the `Backend` interface.
 2. Make it selectable by adding it to the `SelectableBackend` enum.
 test
+test
